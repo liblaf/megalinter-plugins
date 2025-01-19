@@ -1,4 +1,4 @@
-# Biome Typescript
+# (TODO) Biome Typescript
 
 Lint TypeScript files (`*.ts`, `*.tsx`) with [Biome](https://biomejs.dev).
 
