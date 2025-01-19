@@ -4,8 +4,5 @@
 EXTENDS:
   - https://github.com/liblaf/.github/raw/refs/heads/main/.mega-linter.yaml
 
-ENABLE_LINTERS:
-  - MARKDOWN_PRETTIER
-
 PLUGINS:
-  - https://raw.githubusercontent.com/liblaf/megalinter-plugins/refs/heads/main/plugins/markdown-prettier/markdown.megalinter-descriptor.yml
+  - https://raw.githubusercontent.com/liblaf/megalinter-plugins/refs/heads/main/mega-linter-plugin-markdown-prettier/markdown.megalinter-descriptor.yml
