@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/megalinter/megalinter/main/megalinter/descriptors/schemas/megalinter-descriptor.jsonschema.json
+# https://github.com/oxsecurity/megalinter/blob/7e0440a1550723da68bc2befb8c6bcd71bcb963b/megalinter/descriptors/json.megalinter-descriptor.yml#L168-L223
+# https://github.com/oxsecurity/megalinter/blob/main/megalinter/descriptors/markdown.megalinter-descriptor.yml
+descriptor_flavors:
+  - all_flavors
+descriptor_id: MARKDOWN
+descriptor_label: Markdown
+descriptor_type: format
+file_extensions:
+  - .md
+  - .mdx
+linters:
+  - can_output_sarif: false
+    cli_config_arg_name: --config
+    cli_lint_extra_args:
+      - --check
+    cli_lint_fix_arg_name: --write
+    cli_lint_fix_remove_args:
+      - --check
+    cli_lint_mode: list_of_files
+    config_file_name: .prettierrc.json
+    examples:
+      - "prettier --check myfile.md"
+      - "prettier --config .prettierrc.json --check myfile.md"
+      - "prettier --config .prettierrc.json --write myfile.md" # format
+    ide:
+      atom:
+        - name: prettier-atom
+          url: https://github.com/prettier/prettier-atom
+        - name: atom-mprettier
+          url: https://github.com/t9md/atom-mprettier
+        - name: atom-miniprettier
+          url: https://github.com/duailibe/atom-miniprettier
+      emacs:
+        - name: prettier-emacs
+          url: https://github.com/prettier/prettier-emacs
+        - name: prettier.el
+          url: https://github.com/jscheid/prettier.el
+        - name: apheleia
+          url: https://github.com/raxod502/apheleia
+      idea:
+        - name: Prettier
+          url: https://plugins.jetbrains.com/plugin/10456-prettier
+          id: intellij.prettierJS
+      sublime:
+        - name: JsPrettier
+          url: https://packagecontrol.io/packages/JsPrettier
+      vim:
+        - name: vim-prettier
+          url: https://github.com/prettier/vim-prettier
+      visual_studio:
+        - name: JavaScriptPrettier
+          url: https://github.com/madskristensen/JavaScriptPrettier
+      vscode:
+        - name: prettier-vscode
+          url: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+    ignore_file_name: .prettierignore
+    ignore_for_flavor_suggestions: true
+    install:
+      npm:
+        - prettier
+    is_formatter: true
+    linter_banner_image_url: https://todo.com
+    linter_icon_png_url: https://prettier.io/icon.png
+    linter_image_url: https://prettier.io/icon.png
+    linter_name: prettier
+    linter_repo: https://github.com/prettier/prettier
+    linter_rules_configuration_url: https://prettier.io/docs/en/configuration
+    linter_rules_ignore_config_url: https://prettier.io/docs/en/ignore#ignoring-files-prettierignore
+    linter_rules_inline_disable_url: https://prettier.io/docs/en/ignore#markdown
+    linter_rules_url: https://prettier.io/docs/en/options
+    linter_spdx_license: MIT
+    linter_url: https://prettier.io
+    name: MARKDOWN_PRETTIER
