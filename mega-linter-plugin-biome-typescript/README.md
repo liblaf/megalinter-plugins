@@ -9,5 +9,5 @@ Lint TypeScript files (`*.ts`, `*.tsx`) with [Biome](https://biomejs.dev).
 ENABLE_LINTERS:
   - BIOME_TYPESCRIPT
 PLUGINS:
-  - https://raw.githubusercontent.com/liblaf/megalinter-plugins/refs/heads/main/plugins/biome-typescript/typescript.megalinter-descriptor.yml
+  - https://raw.githubusercontent.com/liblaf/megalinter-plugins/refs/heads/main/mega-linter-plugin-biome-typescript/typescript.megalinter-descriptor.yml
 ```

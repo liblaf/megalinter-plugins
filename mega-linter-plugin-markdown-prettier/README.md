@@ -9,5 +9,5 @@ This plugin automatically formats Markdown files (`*.md`, `*.mdx`) with [Prettie
 ENABLE_LINTERS:
   - MARKDOWN_PRETTIER
 PLUGINS:
-  - https://raw.githubusercontent.com/liblaf/megalinter-plugins/refs/heads/main/plugins/markdown-prettier/markdown.megalinter-descriptor.yml
+  - https://raw.githubusercontent.com/liblaf/megalinter-plugins/refs/heads/main/mega-linter-plugin-markdown-prettier/markdown.megalinter-descriptor.yml
 ```
