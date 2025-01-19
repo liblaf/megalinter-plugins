@@ -2,7 +2,7 @@
 
 This plugin automatically formats Markdown files (`*.md`, `*.mdx`) with [Prettier](https://prettier.io).
 
-## Example Usaage
+## Example Usage
 
 ```yaml
 # file: .mega-linter.yml
