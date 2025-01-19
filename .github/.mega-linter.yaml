@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/megalinter/megalinter/main/megalinter/descriptors/schemas/megalinter-configuration.jsonschema.json
+# https://megalinter.io/latest/config-file/
+
+EXTENDS:
+  - https://github.com/liblaf/.github/raw/refs/heads/main/.mega-linter.yaml
+
+ENABLE_LINTERS:
+  - MARKDOWN_PRETTIER
+
+PLUGINS:
+  - https://raw.githubusercontent.com/liblaf/megalinter-plugins/refs/heads/main/plugins/markdown-prettier/markdown.megalinter-descriptor.yml
